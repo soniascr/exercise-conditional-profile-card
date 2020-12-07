@@ -30,19 +30,19 @@ function render(variables = {}) {
   if (variables.includeCover == false) cover = "<div class='cover'></div>";
 
   let name = variables.name;
-  if (variables.name == null) name = "Your name";
+  if (variables.name == null) name = "Name";
 
   let lastname = variables.lastname;
-  if (variables.lastname == null) lastname = "Your lastname";
+  if (variables.lastname == null) lastname = "Lastname";
 
   let role = variables.role;
-  if (variables.role == null) role = "Your role";
+  if (variables.role == null) role = "Role";
 
   let city = variables.city;
-  if (variables.city == null) city = "Your city";
+  if (variables.city == null) city = "City";
 
   let country = variables.country;
-  if (variables.country == null) country = "Your country";
+  if (variables.country == null) country = "Country";
 
   // reset the website body with the new html output
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
